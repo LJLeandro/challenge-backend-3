@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>IMPORTAR TRANSAÇÕES</h1>
+
+<div>
+    <form method="post" enctype="multipart/form-data" asp-controller="Import" asp-action="Create">
+        <div class="mb-3">
+          <input class="form-control" type="file" id="arquivoTransacao" name="arquivoTransacao">
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary">Importar</button>
+        </div>
+    </form>
+</div>
